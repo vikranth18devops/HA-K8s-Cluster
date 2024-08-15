@@ -19,7 +19,7 @@ data "aws_ami" "ubuntu" {
 
 # Create two EC2 instances
 resource "aws_instance" "k8s_proxy" {
-  count = 2
+  count = 1
   # ami           = "ami-04a81a99f5ec58529" # Replace with the latest Ubuntu AMI ID for your region
 
   instance_type          = "t2.micro"
